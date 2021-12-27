@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class SBI {
+
+			public static void main(String[] args) {
+				    { 
+				        int balance = 5000, withdraw, deposit,PIN,i=0;
+				        String Card;
+				        Scanner s = new Scanner(System.in);
+				        System.out.println("******************************************");
+				        System.out.println("*         BALAGUHAN BANK ATM             *");
+				        System.out.println("******************************************");
+				        while(i<4){
+				          System.out.println("\n ENTER YOUR PIN :");
+				          PIN=s.nextInt();
+				        if (PIN==1234){
+				            System.out.println("PIN is valid");
+				            break;
+				        }
+				        else{
+				            System.out.println("PIN is Invalid");
+				           
+				        }
+				        if(i==3){
+				             System.out.println("!!!!!!!!!!!!!!!!!!_____Please take Your Card________!!!!!!!!!!!!!!!!!");
+				             System.exit(1);
+				        }
+				        i++;
+				        }
+				        while(true)
+				        {
+				            System.out.println("Automated Teller Machine");
+				            System.out.println("Choose 1 for Withdraw");
+				            System.out.println("Choose 2 for Deposit");
+				            System.out.println("Choose 3 for Check Balance");
+				            System.out.println("Choose 4 for EXIT");
+				            System.out.print("Choose the operation you want to perform:");
+				            int n = s.nextInt();
+				            switch(n)
+				            {
+				                case 1:
+				                System.out.print("\nEnter money to be withdrawn :");
+				                withdraw = s.nextInt();
+				                if(balance >= withdraw)
+				                {
+				                    balance = balance - withdraw;
+				                     System.out.println("Please collect your money : "+withdraw);
+				                }
+				                else
+				                {
+				                    System.out.println("Insufficient Balance");
+				                }
+				                break;
+				                case 2:
+				                System.out.print("\nEnter money to be deposited  : ");
+				                deposit = s.nextInt();
+				                balance = balance + deposit;
+				                System.out.println("Your Money has been Added successfully ");
+				                break;
+				                case 3:
+				                System.out.println("\nBalance : "+balance);
+				                break;
+				                case 4:
+				                System.out.println("Thank You For Visiting");
+				                System.exit(1);
+				                break;
+				                default:
+				                System.out.println("INVALID Operation\n Try again");
+				            }
+				        }
+				    }
+				}
+             }
+
+
+
+
+
+
+			
+
+		
+
+	
+
+
