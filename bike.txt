@@ -1,0 +1,70 @@
+import java.util.Scanner;
+
+public class bike {
+
+	public static void main(String[] args) {
+
+		int  number,phone,num,n1,n2,no,i=0;
+		String name;
+		Scanner B = new Scanner(System.in);
+		System.out.println("*******************************");
+		System.out.println("*     GUHAN BIKE STAND        *");
+		System.out.println("*******************************");
+		System.out.println("  welcome to guhan bike stand ");
+		System.out.println(" enter the no:");
+		n1 =B.nextInt();
+		if(n1==1) {
+		
+			Scanner C = new Scanner(System.in);
+			System.out.println(" enter the name: ");
+		    name = C.nextLine();
+			System.out.println(" enter the phone no: ");
+			phone = B.nextInt();
+			System.out.println(" enter the bike no :");
+			number = B.nextInt();
+			System.out.println(" token no:");
+            no = B.nextInt();
+			System.out.println("                ");
+
+			System.out.println(" person name :" +name );
+			System.out.println(" person phone no :" +phone);
+			System.out.println(" bike no :" +number);
+			System.out.println(" token no :" +no);
+			}		
+		if(n1==2) {
+			System.out.println("enter the token no:");
+			n2=B.nextInt();
+			if(n2==n2) {
+				
+				switch(n2) {
+				case 45:
+				    System.out.println("token no is vaild your bike in a1 slot");
+				break;
+
+				case 55:
+					System.out.println("token no is vaild your bike in a2 slot");
+					break;
+				case 65:
+					System.out.println("token no is vaild your bike in a3 slot");
+					break;
+				case 75:
+					System.out.println("token no is vaild your bike in a4 slot");
+					break;
+				case 85:
+					System.out.println("token no is vaild your bike in a5 slot");
+					break;
+				case 95:
+					System.out.println("token no is vaild your bike in a6 slot");
+					break;
+				 default:
+					 System.out.println("your token is not vaild");
+					}				
+				
+			 }
+			
+		  }
+		
+		}
+   	}
+
+
