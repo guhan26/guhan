@@ -1,0 +1,100 @@
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Scanner;
+
+public class ticket {
+
+	int n1,n2,a,b,c;
+	String str,to;
+	public static void main(String[] args) {
+		Scanner input= new Scanner(System.in);
+
+		
+	    System.out.println("enter the place:");
+	    int n1 =input.nextInt();
+	    
+		System.out.println("enter the price:");
+		 int a=input.nextInt();
+		 System.out.println("enter the member:");
+		 int b=input.nextInt();
+		 int c=a*b;
+		 System.out.println("enter the OK:");
+		    int n2 =input.nextInt();
+			
+			if(n2==0) {	
+				
+				System.out.println("        GUHAN BUS         ");
+				System.out.println("       HAPPY JOURNY       ");
+				
+				LocalDate myobj = LocalDate.now();
+				System.out.print(myobj);
+				LocalTime myobjt = LocalTime.now();
+				System.out.println("  "+myobjt);
+				System.out.println("--------------------------");
+				
+				System.out.print("from");
+				for(int i=1;i<=10;i++) {
+					System.out.print(" ");
+				}
+				System.out.print("To");
+			}
+		 if(n1==1) {
+				System.out.println("");
+				System.out.print("palani");
+				for(int i=1;i<=10;i++) {
+					System.out.print(" ");
+				}
+				System.out.print("vayalur");
+			}
+		 if(n1==4) {
+				System.out.println("");
+				System.out.print("vayalur");
+				for(int i=1;i<=10;i++) {
+					System.out.print(" ");
+				}
+				System.out.print("udumlai");
+			}
+		 if(n1==5) {
+				System.out.println("");
+				System.out.print("vayalur");
+				for(int i=1;i<=10;i++) {
+					System.out.print(" ");
+				}
+				System.out.print("pollachi");
+			}
+	
+		 if(n1==6) {
+				System.out.println("");
+				System.out.print("udumlai");
+				for(int i=1;i<=10;i++) {
+					System.out.print(" ");
+				}
+				System.out.print("pollachi");
+			}
+		if(n1==2) {
+			System.out.println("");
+			System.out.print("palani");
+			for(int i=1;i<=10;i++) {
+				System.out.print(" ");
+			}
+			System.out.print("udumlai");
+		}
+		if(n1==3) {
+			System.out.println("");
+			System.out.print("palani");
+			for(int i=1;i<=10;i++) {
+				System.out.print(" ");
+			}
+			System.out.print("pollachi");
+			}
+		
+		
+	
+				
+		System.out.println("");
+		System.out.println("FULL :   "+a+""+"*"+b +"="+c);
+		System.out.print("TOTAL RS.: "   +c );		
+        System.out.println("    TKt.NO:");
+		System.out.println("---------------------------");
+		System.out.println("         THANK YOU         ");
+		}}
